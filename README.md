@@ -1,36 +1,18 @@
-# 🎮 UNO Games Collection
+# 🎮 UNO Game
 
-A comprehensive collection of UNO game implementations in Java, featuring multiple variants and advanced object-oriented design patterns.
+A Java implementation of the classic UNO card game featuring human vs computer gameplay with complete rule implementation.
 
-## 🎯 Game Variants
+## 🎯 Features
 
-### [🔴 UNO Classic](./uno-classic/)
-Traditional UNO game with complete rule implementation
-- **Players**: 2-10 (Human/Computer mix)
-- **Cards**: Standard 108-card deck
-- **Features**: Skip, Reverse, Draw Two, Wild cards
-- **Architecture**: Inheritance-based with anti-cheat protection
-
-### [🔄 UNO Flip](./uno-flip/)
-Modern UNO variant with double-sided cards
-- **Players**: 2-10 (Human/Computer mix)
-- **Cards**: Flip cards with Light/Dark sides
-- **Features**: Flip cards, Draw Five, Skip Everyone
-- **Special**: Dynamic side switching gameplay
-
-### [🏗️ UNO Full](./UNO-full/)
-Advanced inheritance-based implementation
-- **Architecture**: Base classes with multiple variants
-- **Variants**: Classic, Flip, and Mercy in one codebase
-- **Design**: Polymorphism and inheritance showcase
-- **Features**: Extensible framework for new variants
-
-### [💙 UNO Mercy](./uno-nomercy/)
-UNO variant with mercy rule modifications
-- **Players**: 2-10 (Human/Computer mix)
-- **Rules**: Modified mercy rules for balanced gameplay
-- **Features**: Custom card effects and win conditions
-- **Design**: Standalone implementation
+- **Players**: 2-4 players (Human/Computer mix)
+- **Cards**: Standard 108-card UNO deck
+- **Game Rules**: Complete UNO implementation including:
+  - Number cards (0-9 in 4 colors)
+  - Action cards (Skip, Reverse, Draw Two)
+  - Wild cards (Wild, Wild Draw Four)
+  - UNO call mechanics
+- **AI Players**: Smart computer opponents with strategic gameplay
+- **Custom Data Structures**: Linked list implementation for card management
 
 ## 🚀 Quick Start
 
@@ -39,25 +21,9 @@ UNO variant with mercy rule modifications
 git clone https://github.com/arijit-06/game-uno.git
 cd game-uno
 
-# Run UNO Classic
-cd uno-classic
+# Compile and run
 javac *.java
 java UnoDemo
-
-# Run UNO Flip
-cd ../uno-flip
-javac *.java
-java UnoFlipDemo
-
-# Run UNO Full (Inheritance Demo)
-cd ../UNO-full
-javac *.java
-java UnoInheritanceDemo
-
-# Run UNO Mercy
-cd ../uno-nomercy
-javac *.java
-java UnoMercyDemo
 ```
 
 ## 🏗️ Architecture Highlights
